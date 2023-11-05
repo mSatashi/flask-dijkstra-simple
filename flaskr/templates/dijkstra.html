@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<img src ='../static/graph.png' alt="Gambar Graph">
+<form method="post">
+    <label for="origin">Origin</label>
+    <input name="origin" id="origin" value="{{ request.form['origin'] }}" required>
+    <label for="dest">Destination</label>
+    <input name="dest" id="dest" value="{{ request.form['dest'] }}" required>
+    <input type="submit" value="Find it">
+  </form>
+
+ {{rp}}
