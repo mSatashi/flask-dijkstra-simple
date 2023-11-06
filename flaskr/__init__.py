@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 from . import dijkstra_algorithm as da
 from collections import deque
 
+app = Flask(__name__)
+
 @app.route('/dijkstra', methods=['GET', 'POST'])
 def dijkstra():
     filename = "../flask-project/flaskr/simple_graph.txt"
