@@ -44,5 +44,4 @@ def create_app(test_config=None):
 
         return render_template('dijkstra.html', rp = rp, rd = rd)
 
-    return app.run(host="0.0.0.0", port=80)
-
+    return app
